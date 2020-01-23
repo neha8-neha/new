@@ -19,44 +19,44 @@ public class CardTrick {
         Card[] magicHand = new Card[7];
         
         
-        String randomVal = null;
+        String randVal = null;
         int [] cards = {1,2,3,4,5,6,7};
         String [] SUIT = {"Hearts", "Diamonds", "Spades", "Clubs"};
 
         for (int i = 0; i < magicHand.length; i++) {
             Card c = new Card();
             //c.setValue(insert call to random number generator here)
-            int numVal = cards [(int) (Math.random()*cards.length)];
-            String suitVal = SUIT[(int)(Math.random()*SUIT.length)]; 
+            int numVal2 = cards [(int) (Math.random()*cards.length)];
+            String suitVal2 = SUIT[(int)(Math.random()*SUIT.length)]; 
             
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
-            c.setValue(numVal);
-            c.setSuit(suitVal);
+            c.setValue(numVal2);
+            c.setSuit(suitVal2);
             
-            randomVal = numVal + " " + suitVal;
+            randVal = numVal2 + " " + suitVal2;
             
-            System.out.println(randomVal);
+            System.out.println(randVal);
         }
         
         Scanner input = new Scanner (System.in);
         //insert code to ask the user for Card value and suit, create their card
-       System.out.println("Pick a card: ");
+       System.out.println("Select any card: ");
         String userVal = input.nextLine();
         // and search magicHand here
         
-        if (randomVal.equalsIgnoreCase(userVal)) {
-        System.out.println ("You won!!!");
+        if (randVal.equalsIgnoreCase(userVal)) {
+        System.out.println ("You won, congrats!!!");
          } else {
-         System.out.println ("Sorry");
+         System.out.println ("you don't win ,Sorry");
           }
     
         //Then report the result here
     
       int crd = 0;
       String suit = null;
-      String cardOfMyWish= luckyCard(crd,suit);
+      String myWishCard = luckyCard(crd,suit);
       
-      System.out.println("Card of my wish is: " + cardOfMyWish);
+      System.out.println("Card of my wish is: " + myWishCard);
     }
     
 public static String luckyCard(int number,String suit) {
