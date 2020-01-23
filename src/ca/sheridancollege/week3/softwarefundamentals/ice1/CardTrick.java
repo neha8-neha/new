@@ -40,15 +40,15 @@ public class CardTrick {
         
         Scanner input = new Scanner (System.in);
         //insert code to ask the user for Card value and suit, create their card
-       // System.out.println("Pick a card: ");
-       // String userVal = input.nextLine();
+       System.out.println("Pick a card: ");
+        String userVal = input.nextLine();
         // and search magicHand here
         
-       // if (randomVal.equalsIgnoreCase(userVal)) {
-       //  System.out.println ("You won!!!");
-        // } else {
-        // System.out.println ("Sorry");
-        //  }
+        if (randomVal.equalsIgnoreCase(userVal)) {
+        System.out.println ("You won!!!");
+         } else {
+         System.out.println ("Sorry");
+          }
     
         //Then report the result here
     
