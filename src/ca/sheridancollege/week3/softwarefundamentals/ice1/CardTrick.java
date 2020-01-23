@@ -58,6 +58,7 @@ public class CardTrick {
       
       System.out.println("Card of my wish is: " + cardOfMyWish);
     }
+    
 public static String luckyCard(int number,String suit) {
         Card c = new Card ();
         int num = 4;
